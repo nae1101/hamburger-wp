@@ -1,0 +1,102 @@
+@use "../../foundation/mixin" as *;
+
+//ファーストビュー
+.p-firstview {
+    width: 100%;
+    min-height: 285px;
+    background-size: cover;
+    object-fit: cover;
+    position: relative;
+    background: url(../img/sp-front-page-top.png);
+
+    @include mq(tab){
+        background: url(../img/tab-front-page-top.jpg);
+        background-size: cover;
+    }
+
+    @include mq(pc){
+        min-height: 530px;
+        background: url(../img/front-page-top.jpg);
+        background-size: cover;
+    }
+
+    &__archive {
+        width: 100%;
+        height: auto;
+        position: relative;
+        min-height: 285px;
+        background-image: url(../img/archive-top.png);
+        background-size: cover;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background-color: rgba(0,0,0,0.4);
+        }
+    }
+
+    &__single {
+        width: 100%;
+        height: auto;
+        position: relative;
+        min-height: 225px;
+        background-image: url(../img/single-top.png);
+        background-size: cover;
+        @include mq(tab){
+            min-height: 505px;
+        }
+        @include mq(pc){
+            min-height: 500px;
+        }
+    }
+
+    &__shop {
+        width: 100%;
+        height: auto;
+        position: relative;
+        min-height: 225px;
+        background-image: url(../img/shop.png);
+        background-size: cover;
+        @include mq(tab){
+            min-height: 505px;
+        }
+        @include mq(pc){
+            min-height: 500px;
+        }
+    }
+    
+    &__title {
+        position: absolute;
+        top: 43%;
+        left: 6.7%;
+        @include rem(36);
+        display: block;
+
+        @include mq(tab){
+            left: 10%;
+            display: flex
+        };
+
+        @include mq(pc){
+            @include rem(40);
+            top: 44%;
+            left: 5.5%;
+            display: flex
+        };
+
+        >h3 {
+            @include rem(16);
+            padding: 12px 0 0 0;
+
+            @include mq(tab) {
+                padding: 25px 10px 10px 10px;
+
+            }
+        }
+    }
+
+}

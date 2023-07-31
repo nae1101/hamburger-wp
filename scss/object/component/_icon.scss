@@ -1,0 +1,62 @@
+@use "../../foundation/mixin" as *;
+
+
+.c-icon {
+    &--mushimegane{
+        width: 24px;
+        height: 24px;
+        background-image: url(../../../img/mushimegane.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__close{
+        display: block;
+        position: relative;
+        width: 32px;
+        height: 36px;
+        
+        @include mq(pc){
+            display: block;
+        }
+
+      &::before, &::after { /* 共通設定 */
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 6px; /* 棒の幅（太さ） */
+        height: 32px; /* 棒の高さ */
+        background: #707070;
+      }
+    
+      &::before {
+        transform: translate(-50%,-50%) rotate(45deg);
+      }
+       
+      &::after {
+        transform: translate(-50%,-50%) rotate(-45deg);
+      }
+    }
+
+    &__prev {
+      width: 17.53px;
+      height: 17.07px;
+      background-image: url(../../../img/prev.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0 10px;
+    }
+    &__next {
+      width: 17.53px;
+      height: 17.07px;
+      background-image: url(../../../img/next.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin: 0 10px;
+
+    }
+}

@@ -1,0 +1,124 @@
+@use "../../foundation/mixin" as *;
+
+
+.p-branch-menu {
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    display: block;
+    padding: 5.3%;
+
+    @include mq(tab){
+        display: flex;
+        padding: 4.7%;
+        gap: 4.7%;
+    }
+    @include mq(pc){
+        display: flex;
+    }
+
+    @mixin menuBox{
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        }
+
+    >ul {
+        display: flex;
+        flex-direction: column;
+        height: 40%;
+        gap: 4.7%;
+        row-gap: 20px;
+        @include mq(tab){
+            flex-direction: row;
+
+        }
+        @include mq(pc){
+            flex-direction: row;
+        }
+
+        >li {
+            display: flex;
+            width: 100%;
+        }
+    }
+    &__01 {
+        @include menuBox;
+        background: url(../img/take-out.png);
+        background-size:cover;
+
+    }
+    &__02 {
+        @include menuBox;
+        background: url(../img/eat-in.png);
+        background-size:cover;
+
+    }
+
+    &__title {
+        position: absolute;
+        top: 13px;
+        left: 15px;
+        color: $white;
+        font-weight: 700;
+        @include rem(41);
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 33.89px;
+            height: 0;
+            border-bottom: 4px solid $white;
+            padding: 3% 0;
+    
+        }
+
+        @include mq(tab) {
+            top: 2%;
+            left: 11px;
+            @include rem(44);
+        };
+        @include mq(pc){
+            top: 24px;
+            left: 11px;
+            @include rem(80);
+        };
+
+    }
+
+    &__whiteBox {
+        background-color: #ffffff;
+        opacity: 0.8;
+        padding: 8px 16px;
+        margin: 16px;
+
+        >dl >dt {
+            font-weight: 700;
+            margin: 0 0 8px 0;
+            @include rem(22);
+
+            @include mq(tab){
+                @include rem(24);
+            }
+            @include mq(pc){
+                @include rem(24);
+            }
+        }
+    }
+    
+    &__detail {
+        margin: min(298px) 0 0 0;
+
+        @include mq(tab){
+            margin: min(340px) 0 0 0;
+        }
+        @include mq(pc){
+            margin: min(824px) 0 0 0;
+        }
+    }
+
+}

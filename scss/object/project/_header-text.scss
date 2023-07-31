@@ -1,0 +1,16 @@
+@use "../../foundation/mixin" as *;
+
+//ページタイトル
+.p-header-text {
+    &__title {
+        padding: 43px 0 0 0;
+        text-align: center;
+        @include rem(40);
+
+        @include mq(pc){
+            @include rem(64);
+            padding: 65px;
+        }
+
+}
+}

@@ -1,0 +1,15 @@
+@use "../foundation/mixin" as *;
+
+//フッター
+.l-footer {
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+    background: url(../img/footer.png);
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 101;
+}

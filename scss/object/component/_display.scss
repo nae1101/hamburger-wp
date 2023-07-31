@@ -1,0 +1,25 @@
+@use "../../foundation/mixin" as *;
+
+.c-display {
+    &__flex {
+        display: flex;
+    }
+    &__flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    &__block {
+        display: block;
+    }
+    &__grid {
+        display: grid;
+        gap: 20px;
+        @include mq(tab){
+            grid-template-columns: repeat(2, minmax(20%, 1fr));
+        }
+        @include mq(pc){
+            grid-template-columns: repeat(3, minmax(20%, 1fr));
+        }
+    }
+}

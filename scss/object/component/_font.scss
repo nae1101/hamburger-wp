@@ -1,0 +1,36 @@
+@use "../../foundation/mixin" as *;
+
+.c-font {
+    &__Mplus1 {
+    font-family: 'M PLUS 1',sans-serif;
+}
+    &__Robot {
+    font-family: 'Robot',sans-serif;
+}
+    &__Mplus1Code {
+    font-family: 'M PLUS 1 Code', sans-serif;
+}
+
+    &__size-h2 {
+        @include rem(28);
+        @include mq(tab){
+            @include rem(36);
+        }
+        @include mq(pc){
+            @include rem(36);
+        }
+    }
+    &__size-h3 {
+        @include rem(24);
+        @include mq(tab){
+            @include rem(28);
+        }
+        @include mq(pc){
+            @include rem(28);
+        }
+    }
+    &__size-h4,&__size-h5,&__size-h6 {
+        @include rem(20);
+    }
+
+}

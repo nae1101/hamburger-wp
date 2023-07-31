@@ -1,0 +1,36 @@
+@use "../foundation/mixin" as *;
+
+//サイドバー
+.l-sidebar {
+    background-color: #F2EDE9;
+    width: 87.4%;
+    height: auto;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    right: -87.4%;
+
+    @include mq(tab){
+        width: 44%;
+    }
+
+    //クリックしたあとの状況
+    &.is-open {
+        height: 100vh;
+        transition: all 0.6s;
+        right: 0;
+        overflow-y: auto;
+        overscroll-behavior-y: contain;
+    }
+
+    @include mq(pc){
+        width: 20%;
+        height: auto;
+        display: block;
+        padding: 84px 46px;
+        right: 0;
+        position: static;
+    }
+
+
+}

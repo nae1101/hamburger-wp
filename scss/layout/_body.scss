@@ -1,0 +1,22 @@
+@use "../foundation/mixin" as *;
+
+//サイト全体
+.l-body {
+    display: flex;
+    
+    //全体に薄いグレーを敷く
+    &__overlay {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.502);
+        z-index: 0;
+        opacity: 0;
+        transition: all 0.3s;
+
+        &.is-open {
+            z-index: 11;
+            opacity: 1;
+        }
+    }
+}

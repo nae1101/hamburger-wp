@@ -1,0 +1,25 @@
+//レスポンシブ//
+$breakpoint: (
+  tab: 'screen and (min-width: 500px)',
+  pc: 'screen and (min-width: 1280px)'
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+   @content;
+  }
+};
+
+// color//
+$gray: #707070;
+$lightgray: #F2EDE9;
+$beige: #FFF7EF;
+$brown: #9D8670;
+$white: #FFFFFF;
+$black: #3C2A10;
+
+//フォントサイズ//
+@mixin rem($size) {
+  font-size: $size + px;
+  font-size: ($size / 16) + rem;
+}

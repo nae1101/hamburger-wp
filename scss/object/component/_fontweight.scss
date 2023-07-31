@@ -1,0 +1,7 @@
+@use "../../foundation/mixin" as *;
+
+.c-fontweight {
+    &__bold {
+        font-weight: 700;
+    }
+}

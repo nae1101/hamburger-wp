@@ -1,0 +1,64 @@
+@use "../../foundation/mixin" as *;
+
+.p-pagination {
+    justify-content: center;
+    margin: 60px 0 30px 0;
+
+    &__wrapper {
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        @include mq(tab) {
+            justify-content: center;
+
+        }
+
+        >div {
+            padding: 0 8px 0 0;
+        }
+
+        >li:nth-child(3){
+            background-color: #3C2B1C;
+            color: #ffffff;
+        }
+
+    }
+
+    &__list {
+        margin: 0 8px;
+        @include mq(tab){
+            display: none;
+        }
+    }
+
+    &__number {
+        display: none;
+        white-space: nowrap;
+        @include rem(16);
+
+        @include mq(tab){
+            display: block;
+        }
+    }
+
+    &__next {
+        @include mq(pc){
+            display: none;
+        }
+    }
+
+
+    &__box {
+        display: none;
+        background-color: #ffffff;
+        @include rem(16);
+
+        @include mq(tab){
+            display: flex;
+            margin: 0 0.4%;
+        }
+    }
+}
+

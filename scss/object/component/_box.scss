@@ -1,0 +1,19 @@
+@use "../../foundation/mixin" as *;
+
+.c-box {
+    &__pagination {
+        border: #707070 1px solid;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__blockquote {
+        width: 100%;
+        height: auto;
+    }
+
+
+}

@@ -1,0 +1,11 @@
+@use "../foundation/mixin" as *;
+
+//bodyの左側
+.l-container {
+    display: block;
+    width: 100%;
+    z-index: 10;
+    @include mq(pc){
+        width: 80%;
+    }
+}

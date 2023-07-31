@@ -1,0 +1,14 @@
+@use "../../foundation/mixin" as *;
+
+.p-footer-copyright {
+    @include rem(14);
+    padding: 16px;
+
+    @include mq(tab){
+        padding: 24px;
+    }
+
+    @include mq(pc){
+        padding: 27px;
+    }
+}

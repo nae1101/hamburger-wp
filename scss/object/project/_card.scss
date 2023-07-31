@@ -1,0 +1,68 @@
+@use "../../foundation/mixin" as *;
+
+.p-card {
+    width: 100%;
+    height: auto;
+
+    &__wrapper {
+        display: block;
+        background-color: #3C2B1C;
+        margin: 5.3%;
+
+        > img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            @include mq(tab){
+                width: 50%;
+                height: auto;
+            }
+        }
+
+        @include mq(tab){
+            display: flex;
+        }
+    }
+
+    &__textarea {
+        width: 100%;
+        height: auto;
+        background-color: #3C2B1C;
+        text-align: center;
+        >button {
+            margin: 0 auto 12.7%;
+        }
+    }
+    &__textbox {
+        width: 100%;
+        height: auto;
+        padding: 9% 5%;
+        text-align: left;
+
+        @include mq(tab){
+            padding: 12% 15% 12% 9%
+        }
+        @include mq(pc){
+            padding: 12% 15% 12% 9%
+
+        }
+        
+        >h2 {
+            @include rem(20);
+            margin: 0 0 20px 0;
+            @include mq(pc){
+                @include rem(36);
+                margin: 0 0 44px 0;
+            }
+        }
+        >h3 {
+            @include rem(16);
+            margin: 0 0 7px 0;
+            @include mq(pc){
+                @include rem(24);
+                margin: 0 0 13px 0;
+            }
+        }
+    }
+
+    }

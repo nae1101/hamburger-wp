@@ -1,0 +1,86 @@
+@use "../../foundation/mixin" as *;
+
+
+.p-footer-text {
+    display: flex;
+    margin: 0 auto;
+    padding: 16px;
+    @include mq(tab){
+        padding: 30px;
+    }
+    @include mq(pc){
+        padding: 41px;
+    }
+
+    >li {
+        margin: 0 5px;
+    }
+
+    &.c-font__Mplus1 {
+        @include rem(18);
+
+        @include mq(tab){
+            @include rem(20);
+        }
+        @include mq(pc){
+            @include rem(20);
+        }
+        }
+
+    > .menu-gmenu-container >ul {
+        display: flex;
+        margin: 0 auto;
+        padding: 16px;
+        
+        
+        @include mq(tab){
+            padding: 30px;
+        }
+        @include mq(pc){
+            padding: 41px;
+        }
+    
+        >li {
+            margin: 0;
+
+            >a {
+                color: #fff;
+                padding: 0 15px;
+            }
+        }
+        >li+li {
+            border-left: 2px solid #fff;
+            top: 0;
+            bottom: 0;
+            height: 25px;
+            vertical-align: middle;
+        }
+        
+
+        // > li+li::before{
+        //     content: "";
+        //     display: block;
+        //     height: 1em;
+        //     border-left: 1px solid #fff;
+        //     position: absolute;
+        //     top: 0;
+        //     bottom: 0;
+        //     margin: auto;
+        // }
+
+    
+        &.c-font__Mplus1 {
+            @include rem(18);
+    
+            @include mq(tab){
+                @include rem(20);
+            }
+            @include mq(pc){
+                @include rem(20);
+            }
+            }
+    }
+}
+
+
+

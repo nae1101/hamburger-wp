@@ -1,0 +1,22 @@
+@use "../../foundation/mixin" as *;
+
+.u-color {
+    &__gray {
+        color: #707070;
+    }
+    &__black {
+        color: #3C2A10;
+    }
+    &__white {
+        color: #ffffff;
+    }
+    &__lightgray {
+        color: #F2EDE9;
+    }
+    &__beige {
+        color: #FFF7EF;
+    }
+    &__brown {
+        color: #9D8670;
+    }
+}
