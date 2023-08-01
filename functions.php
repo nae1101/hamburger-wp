@@ -76,6 +76,8 @@
          
                 //GoogleCDNから読み込む
                 wp_enqueue_script('jquery-js', '//ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js' );
+                wp_enqueue_script( 'bundle', get_theme_file_uri( '/js/main.js' ), 'jquery', true );
+            
                 }
         }
         add_action('wp_print_scripts', 'custom_print_scripts');

@@ -38,10 +38,11 @@
     }
 }
 
+
 .menu-item-object-category {
     font-weight: 700;
     padding: 20px 0;
-    font-family: M+ 1m;
+    font-family: M PLUS 1;
     @include rem(24);
     >a {
         color: #707070;
@@ -50,7 +51,7 @@
 
 .menu-item-object-post {
     padding: 12px 20px;
-    font-family: M+ 1m;
+    font-family:M PLUS 1;
     >a {
         color: #707070;
         @include rem(20);
