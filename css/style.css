@@ -684,47 +684,47 @@ th {
     font-size: 1.25rem;
   }
 }
-.p-footer-text > .menu-gmenu-container > ul {
+.p-footer-text > .menu-footer-navigation-container > ul {
   display: flex;
   margin: 0 auto;
   padding: 16px;
 }
 @media screen and (min-width: 500px) {
-  .p-footer-text > .menu-gmenu-container > ul {
+  .p-footer-text > .menu-footer-navigation-container > ul {
     padding: 30px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .p-footer-text > .menu-gmenu-container > ul {
+  .p-footer-text > .menu-footer-navigation-container > ul {
     padding: 41px;
   }
 }
-.p-footer-text > .menu-gmenu-container > ul > li {
+.p-footer-text > .menu-footer-navigation-container > ul > li {
   margin: 0;
 }
-.p-footer-text > .menu-gmenu-container > ul > li > a {
+.p-footer-text > .menu-footer-navigation-container > ul > li > a {
   color: #fff;
   padding: 0 15px;
 }
-.p-footer-text > .menu-gmenu-container > ul > li + li {
+.p-footer-text > .menu-footer-navigation-container > ul > li + li {
   border-left: 2px solid #fff;
   top: 0;
   bottom: 0;
   height: 25px;
   vertical-align: middle;
 }
-.p-footer-text > .menu-gmenu-container > ul.c-font__Mplus1 {
+.p-footer-text > .menu-footer-navigation-container > ul.c-font__Mplus1 {
   font-size: 18px;
   font-size: 1.125rem;
 }
 @media screen and (min-width: 500px) {
-  .p-footer-text > .menu-gmenu-container > ul.c-font__Mplus1 {
+  .p-footer-text > .menu-footer-navigation-container > ul.c-font__Mplus1 {
     font-size: 20px;
     font-size: 1.25rem;
   }
 }
 @media screen and (min-width: 1280px) {
-  .p-footer-text > .menu-gmenu-container > ul.c-font__Mplus1 {
+  .p-footer-text > .menu-footer-navigation-container > ul.c-font__Mplus1 {
     font-size: 20px;
     font-size: 1.25rem;
   }
