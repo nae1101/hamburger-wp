@@ -5,7 +5,7 @@
             <h2><p class="p-sidebar-menu__title c-font__Robot c-fontweight__bold u-color__gray">Menu</p></h2>
         
             
-            <?php wp_nav_menu(array('menu' => 'Menu')); ?>
+            <?php wp_nav_menu(array('theme_location' => 'sidebar_nav')); ?>
             <!-- <ul>
             <li><h3 class="p-sidebar-menu__subtitle c-font__Mplus1 c-fontweight__bold u-color__gray">バーガー</h3>
                 <ul class="p-sidebar-menu__list c-font__Mplus1 u-color__gray">

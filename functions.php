@@ -12,7 +12,7 @@
         add_theme_support( 'menus' );
         add_theme_support( 'title-tag' );
         add_theme_support( 'post-thumbnails' ); //新たに追加
-        register_nav_menus(array(
+        register_nav_menus(array(//ナビゲーションメニュー追加
             'footer_nav'=>esc_html__('footer navigation','hamburger'),
             'sidebar_nav'=>esc_html__('sidebar navigation','hamburger'),
         ));
@@ -42,32 +42,6 @@
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_script' );
 
-    //サイドバー
-    function wpbeg_widgets_init() {
-        register_sidebar (
-            array(
-                'name'          => 'カテゴリーウィジェット',
-                'id'            => 'category_widget',
-                'description'   => 'カテゴリー用ウィジェットです',
-                'before_widget' => '<div id="%1$s" class="widget %2$s">',
-                'after_widget'  => '</div>',
-                'before_title'  => '<h2><i class="fa fa-folder-open" aria-hidden="true"></i>',
-                'after_title'   => "</h2>\n",
-            )
-        );
-        register_sidebar(
-            array(
-                'name'          => 'アーカイブウィジェット',
-                'id'            => 'archive_widget',
-                'description'   => 'アーカイブ用ウィジェットです',
-                'before_widget' => '<div id="%1$s" class="widget %2$s">',
-                'after_widget'  => '</div>',
-                'before_title'  => '<h2><i class="fa fa-archive" aria-hidden="true"></i>',
-                'after_title'   => "</h2>\n",
-            )
-          );
-    }
-    add_action( 'widgets_init', 'wpbeg_widgets_init' );
 
     function custom_print_scripts() {
         if (!is_admin()) {
@@ -75,10 +49,11 @@
                 wp_deregister_script('jquery');
          
                 //GoogleCDNから読み込む
-                wp_enqueue_script('jquery-js', '//ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js' );
-                wp_enqueue_script( 'bundle', get_theme_file_uri( '/js/main.js' ), 'jquery', true );
+                wp_enqueue_script('jquery-js', '//ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js','','3.7.0',true );
+                wp_enqueue_script( 'samplejs', get_theme_file_uri( '/js/main.js' ), array('jquery-js'),'', true );
             
                 }
         }
         add_action('wp_print_scripts', 'custom_print_scripts');
+
 
