@@ -15,6 +15,7 @@
 </head>
 
 <body id="body" <?php body_class(); ?>>
+<?php wp_body_open(); ?>
     <main class="l-body">
         <div class=" l-body__overlay"></div>
 

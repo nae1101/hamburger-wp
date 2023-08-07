@@ -1,0 +1,93 @@
+@use "../../foundation/mixin" as *;
+
+.p-page {
+    >* {
+        color: #3C2A10;
+        font-family: 'M PLUS 1',sans-serif;;
+    }
+
+    >h2 {
+        font-size: 28px;
+        @include mq(tab){
+            @include rem(36);
+        }
+    }
+    
+    >h3 {
+        font-size: 24px;
+        @include mq(tab){
+            @include rem(28);
+        }
+    }
+    
+    >h4 {
+        font-size: 20px;
+    }
+
+    >h5 {
+        font-size: 20px;
+    }
+
+    >h6 {
+        font-size: 20px;
+    }
+
+    .wp-block-quote {
+        padding: 30px 12px;
+        @include mq(tab){
+            padding: 50px;
+        }
+        >cite {
+            color:#3C2A10;
+            > a {
+                color: #4A6C9B;
+                text-decoration:underline;
+            }
+        }
+    }
+
+    >li {
+        list-style-type: auto;
+    }
+
+    .wp-block-media-text__content {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .wp-block-group__inner-container>ol:nth-child(even) {
+        padding: 20px;
+    }
+
+    .wp-block-group__inner-container>ul:nth-child(even) {
+        padding: 20px;
+    }
+
+    .wp-block-group__inner-container>ul {
+        list-style-type: none;
+    }
+
+    td{
+        padding: 1.5em;
+    }
+
+    .wp-element-button {
+        background: linear-gradient(to right,#F2EDE9,#DED8D3);
+        border: 1px solid #707070;
+        border-radius: 10px;
+        width: 335px;
+        height: 81px;
+        color: #3C2A10;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 70px;
+        @include rem(16);
+        font-weight: 700;
+        font-family: 'M PLUS 1',sans-serif;;
+
+        @include mq(tab){
+            width: 429px;
+            height: 104px;
+        }
+    }
+} 

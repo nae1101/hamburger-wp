@@ -9,7 +9,6 @@
             'caption',
         ));
         //テーマサポート
-        add_theme_support( 'menus' );
         add_theme_support( 'title-tag' );
         add_theme_support( 'post-thumbnails' ); //新たに追加
         register_nav_menus(array(//ナビゲーションメニュー追加
@@ -55,5 +54,6 @@
                 }
         }
         add_action('wp_print_scripts', 'custom_print_scripts');
+        add_theme_support( 'automatic-feed-links' );
 
 
