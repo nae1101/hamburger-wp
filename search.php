@@ -1,11 +1,11 @@
-<?php get_header(); ?> <!--header.phpを読み込むテンプレートタグ（インクルードタグ）-->
+<?php get_header(); ?>
 
 
     <article class="l-contents">
         <section class="p-firstview__archive">
             <div class="p-firstview__title c-display__flex c-display__block">
-            <h2 class="c-font__Mplus1 c-fontweight__bold u-color__white">Search</h2>
-            <h3 class="c-font__Mplus1 c-fontweight__bold u-color__white">チーズバーガー</h3>
+            <h2 class="c-font__Mplus1 c-fontweight__bold u-color__white">Search:</h2>
+            <h3 class="c-font__Mplus1 c-fontweight__bold u-color__white"><?php the_title(); ?></h3>
             </div>
         </section>
 
@@ -22,13 +22,13 @@
 
             <div class="p-card__wrapper">
                 <?php 
-                if ( has_post_thumbnail() ) { // 投稿にアイキャッチ画像が割り当てられているかチェックします。
+                if ( has_post_thumbnail() ) { 
 	            the_post_thumbnail();
                 } 
                 ?>
                 <section class="p-card__textarea">
                     <div class="p-card__textbox">
-                    <h2 class="u-color__white c-fontweight__bold"><?php the_title(); ?><!--チーズバーガー--></h2>
+                    <h2 class="u-color__white c-fontweight__bold"><?php the_title(); ?></h2>
                     <p class="u-color__white"><?php the_content();?></p>
                     </div>
                     <button type="button" class="p-archive__button c-button--detail c-font__Mplus1 c-fontweight__bold u-color__gray"><a href="<?php the_permalink(); ?>" class="u-color__gray">詳しく見る</a></button>
@@ -47,7 +47,7 @@
 
     </div>
 
-    <?php get_sidebar(); ?> <!--//siderbar.phpを読み込むテンプレートタグ（インクルードタグ）-->
+    <?php get_sidebar(); ?>
 </main>
 
-<?php get_footer(); ?> <!--footer.phpを読み込むテンプレートタグ（インクルードタグ）-->
+<?php get_footer(); ?>

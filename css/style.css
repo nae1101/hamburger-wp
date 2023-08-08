@@ -1639,35 +1639,31 @@ th {
   }
 }
 
-.p-page > * {
-  color: #3C2A10;
-  font-family: "M PLUS 1", sans-serif;
-}
-.p-page > h2 {
+.p-page > div > h2 {
   font-size: 28px;
 }
 @media screen and (min-width: 500px) {
-  .p-page > h2 {
+  .p-page > div > h2 {
     font-size: 36px;
     font-size: 2.25rem;
   }
 }
-.p-page > h3 {
+.p-page > div > h3 {
   font-size: 24px;
 }
 @media screen and (min-width: 500px) {
-  .p-page > h3 {
+  .p-page > div > h3 {
     font-size: 28px;
     font-size: 1.75rem;
   }
 }
-.p-page > h4 {
+.p-page > div > h4 {
   font-size: 20px;
 }
-.p-page > h5 {
+.p-page > div > h5 {
   font-size: 20px;
 }
-.p-page > h6 {
+.p-page > div > h6 {
   font-size: 20px;
 }
 .p-page .wp-block-quote {

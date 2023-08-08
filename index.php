@@ -1,4 +1,4 @@
-<?php get_header(); ?> <!--header.phpを読み込むテンプレートタグ（インクルードタグ）-->
+<?php get_header(); ?>
 
 
     <article class="l-contents">
@@ -68,7 +68,7 @@
 
     </div>
 
-    <?php get_sidebar(); ?> <!--//siderbar.phpを読み込むテンプレートタグ（インクルードタグ）-->
+    <?php get_sidebar(); ?>
 </main>
 
-<?php get_footer(); ?> <!--footer.phpを読み込むテンプレートタグ（インクルードタグ）-->
+<?php get_footer(); ?>

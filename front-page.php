@@ -1,12 +1,8 @@
-<?php get_header(); ?> <!--header.phpを読み込むテンプレートタグ（インクルードタグ）-->
-
+<?php get_header(); ?> 
 
     <article class="l-contents">
         <section class="p-firstview">
-            <!-- <picture>
-                <source media="(max-width: 375px)" srcset="img/sp-front-page-top.png">
-                <img src="img/front-firstview.jpg" alt="ハンバーガーサイトのファーストビュー"> 
-            </picture> -->
+
             <h2><p class="p-firstview__title c-font__Mplus1 c-fontweight__bold u-color__white">ダミーサイト</p></h2>
         </section>
         <div class="p-branch-menu">
@@ -67,7 +63,7 @@
 
     </div>
 
-    <?php get_sidebar(); ?> <!--//siderbar.phpを読み込むテンプレートタグ（インクルードタグ）-->
+    <?php get_sidebar(); ?>
 </main>
 
-<?php get_footer(); ?> <!--footer.phpを読み込むテンプレートタグ（インクルードタグ）-->
+<?php get_footer(); ?>

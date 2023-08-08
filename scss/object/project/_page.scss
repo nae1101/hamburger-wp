@@ -1,35 +1,31 @@
 @use "../../foundation/mixin" as *;
 
 .p-page {
-    >* {
-        color: #3C2A10;
-        font-family: 'M PLUS 1',sans-serif;;
-    }
-
-    >h2 {
-        font-size: 28px;
-        @include mq(tab){
-            @include rem(36);
+    >div{
+        >h2 {
+            font-size: 28px;
+            @include mq(tab){
+                @include rem(36);
+            }
         }
-    }
-    
-    >h3 {
-        font-size: 24px;
-        @include mq(tab){
-            @include rem(28);
+        >h3 {
+            font-size: 24px;
+            @include mq(tab){
+                @include rem(28);
+            }
         }
-    }
+        
+        >h4 {
+            font-size: 20px;
+        }
     
-    >h4 {
-        font-size: 20px;
-    }
-
-    >h5 {
-        font-size: 20px;
-    }
-
-    >h6 {
-        font-size: 20px;
+        >h5 {
+            font-size: 20px;
+        }
+    
+        >h6 {
+            font-size: 20px;
+        }
     }
 
     .wp-block-quote {
